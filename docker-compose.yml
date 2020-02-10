@@ -4,6 +4,6 @@ services:
   app:
     image: golang:latest
     volumes:
-        - .:/go/src/
+        - ./app:/go/src/app
     working_dir: /go/src/
-    command: go get . && go run main.go
+    command: go get . && go run app/main.go
